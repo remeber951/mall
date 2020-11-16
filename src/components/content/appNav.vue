@@ -11,11 +11,6 @@
         <router-link to="/category" class="item" active-class="active">详情页</router-link>
         <router-link to="/detail" class="item" active-class="active">购物车</router-link>
         <router-link to="/cart" class="item" active-class="active">分类页</router-link>
-        
-
-        <!-- 直接将跳转事件绑定到元素上来实现页面跳转 -->
-        <button @click="homeClick">首页</button>
-        <button @click="cartClick">购物车</button>
     </div>
 </template>
 
@@ -43,7 +38,7 @@ export default {
         bottom: 0;
         display: -webkit-flex;
         display: flex;
-        width: 800px;
+        width: 100%;
         height: 49px;
         font-size: 16px;
         line-height: 49px;
