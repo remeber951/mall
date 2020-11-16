@@ -7,10 +7,10 @@
             tag="将原来的<a>标签替换成别的标签"
             active-class="将被激活的路由样式替换为指定名称，也可以通过router中设置linkActiveClass将默认样式名称替换成别的"   
         >分类页</router-link> -->
-        <router-link to="/home" class="item" active-class="active">柱状图实现</router-link>
-        <router-link to="/category" class="item" active-class="active">详情页</router-link>
-        <router-link to="/detail" class="item" active-class="active">购物车</router-link>
-        <router-link to="/cart" class="item" active-class="active">分类页</router-link>
+        <router-link to="/home" class="item" active-class="active">首页</router-link>
+        <router-link to="/category" class="item" active-class="active">分类</router-link>
+        <router-link to="/cart" class="item" active-class="active">购物车</router-link>
+        <router-link to="/user" class="item" active-class="active">用户</router-link>
     </div>
 </template>
 
@@ -18,14 +18,6 @@
 
 export default {
   name: 'appNav',
-  methods:{
-    homeClick(){
-      //this.$router.replace('/home');    //直接跳转无返回
-      this.$router.push('/home');   //普通跳转
-    },cartClick(){
-      this.$router.push('/cart');
-    }
-  },
   components: {
       
   }
